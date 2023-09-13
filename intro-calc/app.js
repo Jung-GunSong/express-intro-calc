@@ -4,11 +4,11 @@
 const express = require("express");
 const app = express();
 
-const {findMean, findMode, findMedian} = require("./stats")
-const {convertStrNums} = require("./utils")
+const {findMean, findMode, findMedian} = require("../stats")
+const {convertStrNums} = require("../utils")
 
 // useful error class to throw
-const { NotFoundError, BadRequestError } = require("./expressError");
+const { NotFoundError, BadRequestError } = require("../expressError");
 
 const MISSING = "Expected key `nums` with comma-separated list of numbers.";
 
